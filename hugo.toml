@@ -1,0 +1,50 @@
+baseURL = "https://junoatoms.ai/"
+languageCode = "en-us"
+title = "Juno Atoms"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  defaultTheme = "dark"
+  showReadingTime = true
+  showShareButtons = false
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showToc = true
+  description = "AI companion philosophy, building PIP/Allison, AI ethics"
+  author = "Jason Adams"
+
+  [params.homeInfoParams]
+    Title = "Juno Atoms"
+    Content = "The journal of building a relationship with AI. Personal, reflective, philosophical."
+
+  [params.profileMode]
+    enabled = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
